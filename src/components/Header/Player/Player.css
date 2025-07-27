@@ -1,0 +1,35 @@
+
+.player{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.player-symbol {
+    font-weight: bold;
+
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.edit-player-btn {
+    /*remove button style and background*/
+    color: yellow;
+    background-color: #282c34;
+    padding: 10px;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;   
+}
+
+.player-name-input {
+    width: 100px;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    background-color: #282c34;
+    color: #fff;
+    margin-right: 5px;
+    margin-left: 5px;
+}
