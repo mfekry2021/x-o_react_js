@@ -1,0 +1,25 @@
+.game-board {
+    margin-top: 30px;
+    align-items: center;
+}
+
+.board-row ul {
+  display: flex;
+}
+
+
+.board-slot {
+    border: 1px solid #666;
+    display: inline-block;
+    padding: 20px;
+    background-color: darkgoldenrod;
+    min-width: 50px;
+    min-height: 50px;
+
+
+}
+
+.board-row {
+    display: block;
+    width: 100%;
+}
