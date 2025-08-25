@@ -5,6 +5,10 @@
   height: 100vh;
   background-color: #f0f0f0;
   flex-direction: column;
+  background-color: #282c34;
+  width: 500px;
+  height: 500px;
+  margin: 100px auto;
 }
 
 

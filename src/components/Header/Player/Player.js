@@ -12,7 +12,8 @@ export default function Player({ initName, symbol }) {
             type="text"
             className='player-name-input'
             defaultValue={playerName}
-            onBlur={toggleEditing}
+            // onBlur={toggleEditing}
+            onChange={handleNameChange}
             autoFocus
         />
         editButtonText = 'Save';
@@ -28,13 +29,14 @@ export default function Player({ initName, symbol }) {
     );
 
     function toggleEditing(event) {
-        if (editing){
-            setPlayerName(event.target.value);
-        }
-        // setEditing(editing => !editing);
-        setEditing((editing) => !editing);
-        
-        console.log(`Editing mode is now ${editing ? 'on' : 'off'}`);
-        console.log("======================");
+        setEditing(editing => {
+            const newEditing = !editing;
+            console.log(`Editing mode is now ${newEditing ? 'on' : 'off'}`);
+            return newEditing;
+        });
+    }
+
+      function handleNameChange(event) {
+        setPlayerName(event.target.value);
     }
 }
